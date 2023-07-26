@@ -7,3 +7,5 @@
 * [Installation Guide](docs/Installation_Guide.md)
 * [Setting up SSH keys with GitHub](docs/Setting_up_SSH_keys_GitHub.md)
 * [More helpful information](docs/More_helpful_info.md)
+
+### All files outside of docs should be grouped into a src folder
