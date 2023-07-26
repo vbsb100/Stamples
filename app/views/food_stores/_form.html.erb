@@ -1,0 +1,47 @@
+<%= form_with(model: food_store, local: true) do |form| %>
+  <% if food_store.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(food_store.errors.count, "error") %> prohibited this food_store from being saved:</h2>
+
+      <ul>
+        <% food_store.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :zipCode %>
+    <%= form.number_field :zipCode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :city %>
+    <%= form.text_field :city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :streetAddress %>
+    <%= form.text_field :streetAddress %>
+  </div>
+
+  <div class="field">
+    <%= form.label :openHours %>
+    <%= form.number_field :openHours %>
+  </div>
+
+  <div class="field">
+    <%= form.label :closeHours %>
+    <%= form.number_field :closeHours %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

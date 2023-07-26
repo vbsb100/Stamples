@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @food_store.name %>
+</p>
+
+<p>
+  <strong>Zipcode:</strong>
+  <%= @food_store.zipCode %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @food_store.city %>
+</p>
+
+<p>
+  <strong>Streetaddress:</strong>
+  <%= @food_store.streetAddress %>
+</p>
+
+<p>
+  <strong>Openhours:</strong>
+  <%= @food_store.openHours %>
+</p>
+
+<p>
+  <strong>Closehours:</strong>
+  <%= @food_store.closeHours %>
+</p>
+
+<%= link_to 'Edit', edit_food_store_path(@food_store) %> |
+<%= link_to 'Back', food_stores_path %>
